@@ -46,7 +46,7 @@ public class LinkNode<T> {
 			val = nextNode.getValue();
 			array[i] = val;
 			if (node.next != null) {
-				nextNode = node.next;
+				nextNode = nextNode.next;
 			}
 		}
 
