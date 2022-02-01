@@ -16,7 +16,7 @@ class SelectionSortTest {
 
 	@Test
 	void test() {
-		int[] array = RandomGenerator.generateNums(20);
+		Integer[] array = RandomGenerator.generateNums(20);
 		PrintUtil.printArray("Before select Sort: %s", array);
 		selectSort.sortArray(array);
 		PrintUtil.printArray("After select Sort: %s", array);

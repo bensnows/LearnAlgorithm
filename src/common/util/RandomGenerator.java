@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class RandomGenerator {
 
-	public static int[] generateNums(int size) {
+	public static Integer[] generateNums(int size) {
 
-		int[] array = new int[size];
+		Integer[] array = new Integer[size];
 
 		Random random = new Random();
 		for (int i = 0; i < size; i++)

@@ -17,7 +17,7 @@ class BubbleSortingTest {
 	@Test
 	void test() {
 
-		int[] randomArray = RandomGenerator.generateNums(20);
+		Integer[] randomArray = RandomGenerator.generateNums(20);
 		PrintUtil.printArray("Before BubbleSort:%s", randomArray);
 		sortInterface.sortArray(randomArray);
 		PrintUtil.printArray("After BubbleSort:%s", randomArray);

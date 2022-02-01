@@ -2,5 +2,5 @@ package sorting;
 
 public interface SortingInterface {
 	
-	void sortArray(int[] array);
+	Integer[] sortArray(Integer[] array);
 }

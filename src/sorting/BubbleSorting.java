@@ -3,7 +3,7 @@ package sorting;
 public class BubbleSorting implements SortingInterface {
 
 	@Override
-	public void sortArray(int[] array) {
+	public Integer[] sortArray(Integer[] array) {
 		int size = array.length;
 		// sorting times
 
@@ -28,6 +28,7 @@ public class BubbleSorting implements SortingInterface {
 				break;
 			}
 		}
+		return array;
 	}
 
 }

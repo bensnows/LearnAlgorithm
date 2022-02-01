@@ -5,7 +5,7 @@ import common.util.PrintUtil;
 public class SelectionSort implements SortingInterface {
 
 	@Override
-	public void sortArray(int[] array) {
+	public Integer[] sortArray(Integer[] array) {
 
 		for (int index = 0; index < array.length - 1; index++) {
 			int currentNum = array[index];
@@ -23,5 +23,6 @@ public class SelectionSort implements SortingInterface {
 				array[nextIndex] = currentNum;
 			}
 		}
+		return array;
 	}
 }
