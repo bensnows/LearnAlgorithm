@@ -1,10 +1,10 @@
-package test.bean;
+package test.sorting.bean;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import bean.LinkNode;
+import main.sorting.bean.LinkNode;
 
 class LinkNodeTest {
 

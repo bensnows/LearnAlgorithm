@@ -1,14 +1,14 @@
-package test.sorting;
+package test.sorting.method;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import common.util.PrintUtil;
-import common.util.RandomGenerator;
-import sorting.SelectionSort;
-import sorting.SortingInterface;
-import test.SortingValidator;
+import main.sorting.method.SelectionSort;
+import main.sorting.method.SortingInterface;
+import main.sorting.util.PrintUtil;
+import main.sorting.util.RandomGenerator;
+import test.sorting.util.SortingValidator;
 
 class SelectionSortTest {
 
@@ -16,7 +16,7 @@ class SelectionSortTest {
 
 	@Test
 	void test() {
-		Integer[] array = RandomGenerator.generateNums(20);
+		Integer[] array = RandomGenerator.generateRandomNums(20);
 		PrintUtil.printArray("Before select Sort: %s", array);
 		selectSort.sortArray(array);
 		PrintUtil.printArray("After select Sort: %s", array);

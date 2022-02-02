@@ -1,6 +1,4 @@
-package sorting;
-
-import common.util.PrintUtil;
+package main.sorting.method;
 
 public class SelectionSort implements SortingInterface {
 

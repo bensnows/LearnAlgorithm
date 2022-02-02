@@ -1,4 +1,4 @@
-package sorting;
+package main.sorting.method;
 
 public class BubbleSorting implements SortingInterface {
 

@@ -1,6 +1,6 @@
-package sorting;
+package main.sorting.method;
 
-import bean.LinkNode;
+import main.sorting.bean.LinkNode;
 
 public class InsertSort implements SortingInterface {
 

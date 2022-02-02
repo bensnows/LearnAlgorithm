@@ -1,4 +1,4 @@
-package common.util;
+package main.sorting.util;
 
 public class PrintUtil {
 

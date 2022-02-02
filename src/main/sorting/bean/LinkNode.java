@@ -1,4 +1,4 @@
-package bean;
+package main.sorting.bean;
 
 import javax.print.attribute.standard.MediaSize.Other;
 
