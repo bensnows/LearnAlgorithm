@@ -33,11 +33,10 @@ public class MergeSort implements SortingInterface {
 		leftArray = mergeSort(leftArray);
 		rightArray = mergeSort(rightArray);
 
-		return mergeArray(leftArray, rightArray);
+		return mergeArray(array,leftArray, rightArray);
 	}
 
-	private Integer[] mergeArray(Integer[] leftArray, Integer[] rightArray) {
-		Integer[] arr = new Integer[leftArray.length + rightArray.length];
+	private Integer[] mergeArray(Integer[] oriArray,Integer[] leftArray, Integer[] rightArray) {
 
 		int leftIndex = 0;
 		int rightIndex = 0;
@@ -45,21 +44,21 @@ public class MergeSort implements SortingInterface {
 
 		while (leftIndex < leftArray.length && rightIndex < rightArray.length) {
 			if(leftArray[leftIndex]<=rightArray[rightIndex]) {
-				arr[index++] = leftArray[leftIndex++]; 
+				oriArray[index++] = leftArray[leftIndex++]; 
 			} else {
-				arr[index++] = rightArray[rightIndex++]; 
+				oriArray[index++] = rightArray[rightIndex++]; 
 			}
 		}
 		
 		for(;leftIndex<leftArray.length;leftIndex++) {
-			arr[index++]=leftArray[leftIndex]; 
+			oriArray[index++]=leftArray[leftIndex]; 
 		}
 		
 		for(;rightIndex<rightArray.length;rightIndex++) {
-			arr[index++]=rightArray[rightIndex]; 
+			oriArray[index++]=rightArray[rightIndex]; 
 		}
 
-		return arr;
+		return oriArray;
 	}
 
 }
