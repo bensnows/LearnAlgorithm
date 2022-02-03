@@ -6,7 +6,40 @@ public class InsertSort implements SortingInterface {
 
 	@Override
 	public Integer[] sortArray(Integer[] array) {
+		// sort by using linknode
+//		return sortArrayByLinkNode(array);
 
+		return sortArrayInArray(array);
+	}
+
+	private Integer[] sortArrayInArray(Integer[] array) {
+
+		for (int i = 0; i < array.length; i++) {
+
+			int temp = array[i];
+			int tempIndex = i;
+			int currentIndex = i + 1;
+			while (currentIndex < array.length) {
+				if (temp > array[currentIndex]) {
+					temp = array[currentIndex];
+					tempIndex = currentIndex;
+				}
+				currentIndex++;
+			}
+			
+			//shift
+			while(tempIndex>i) {
+				array[tempIndex]=array[tempIndex-1];
+				tempIndex--;
+			}
+			
+			array[i] = temp;
+		}
+
+		return array;
+	}
+
+	private Integer[] sortArrayByLinkNode(Integer[] array) {
 		LinkNode<Integer> firstNode = new LinkNode<Integer>(array[0]);
 
 		for (int i = 1; i < array.length; i++) {
